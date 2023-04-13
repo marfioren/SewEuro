@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Tvrtka Kompeks d.o.o  je ovlašteni  zastupnik i distributer proizvoda tvrtke SEW-EURODRIVE GmbH & Co KG za tržište Republike Hrvatske i Federacije Bosne i Hercegovine" />
+<meta name="keywords" content="SEW, SEW-EURODRIVE, Kompeks, elektromotor, reduktor, motoreduktor,  inverter, servo motori, frekvencijski pretvarači, decentralizirani pogonski sustavi, kompeks, Kompeks, kompeks hrvatska, kompeks hr" />
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>Kompeks</title>
+    <style>
+        @media only screen{
+            body{
+
+                font-family: Verdana,Helvetica, sans-serif;
+                font-weight: 400;
+                background-color: #DBDEDF;
+                line-height: 19pt;
+            }
+            .carousel-caption {
+                top: 0;
+                bottom: auto;
+            }
+            #izbornik{
+
+                background-image: linear-gradient(#4F585E, #3E474D, #2D363D);
+            }
+            #logo{
+                background-color: #FFFFFF;
+                width:550px;
+                height:75px;
+                margin-top: 0px;
+                margin-left: 50px;
+            }
+            #rowIzbornik{
+                padding-left: 5%;
+            }
+            #meni{
+                padding-top: 41px;
+                padding-left: 0px;
+                color:#FFFFFF;
+            }
+            #logoMobile{
+                display: none;
+            }
+            #treciLink{
+                margin-left: 41px;
+
+            }
+            #drugiLink{
+                margin-left: 0px;
+            }
+            #cetLink{
+                padding-top: 0px;
+            }
+
+            .crtaMeni{
+                float: left;
+                padding-left:15px;
+                padding-right:15px;
+                border-left: 1px solid #697279;
+                border-right: transparent;
+                display: inline-block;
+                background-color:transparent;
+                border-top: transparent;
+                border-bottom: transparent;
+            }
+            .crtaMeni-trenutno{
+                float: left;
+                height:34px;
+                padding-left:14px;
+                padding-right:14px;
+                margin-bottom: 0px;
+                color:#2D363D;
+                border-left: 1px solid #FFFFFF;
+                border-right: transparent;
+                display: inline-block;
+                background-color:#FFFFFF;
+                border-top: transparent;
+                border-bottom: 1px solid #FFFFFF;
+            }
+            .crtaMeni:hover{
+                padding-bottom: 7px;
+                background-color:#697279;
+                border-top: 1px solid #FFFFFF;
+                border-left: 1px solid #FFFFFF;
+                border-right: 1px solid #FFFFFF;
+            }
+            .Popup{
+                display: none;
+                background-color: #697279;
+                border: 1px solid #FFFFFF;
+                padding:20px;
+            }
+            .Popupactive{
+                position: absolute;
+                z-index: 1;
+                top: 100%;
+
+            }
+            #PopupContainer{
+                z-index: 1;
+                position: absolute;
+                width:73%;
+                left:10%;
+                height:auto;
+            }
+            .buttonVise{
+                background-color: #B6192A;
+                color:#FFFFFF;
+                padding-left: 5px;
+                padding-right: 5px;
+                border-color: transparent;
+                font-size: 13px;
+                font-weight: bold;
+            }
+            .buttonVise:hover{
+                background-color: #FD0101;
+            }
+            #uvod{
+                display: inline-block;
+                color:#FFFFFF;
+            }
+            #uvodTekst{
+                padding-left: 20px;
+                padding-right: 20px;
+                color:#FFFFFF;
+            }
+            .list-inline{
+                width:90%;
+                margin-top:30px;
+            }
+            .list-item{
+                width:30%;
+                background-color:transparent;
+
+            }
+            .slika-item{
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+                margin-top:0px;
+                margin-bottom: 10px;
+            }
+            .p-item{
+                background-color:#343D44;
+                color:#FFFFFF;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            #mobile{
+                display:none;
+            }
+            .slika-mobile{
+                width:100%;
+                height:auto;
+                margin-bottom: 10px;
+            }
+            .KontaktTablica{
+                color:#FFFFFF;
+                font-size: large;
+                margin-left:40%;
+            }
+            .KontaktTablica th{
+                text-align: center;
+            }
+
+            #sadrzajText{
+                padding-top: 20px;
+                padding-bottom: 20px;
+                width:80%;
+                left:12%;
+                height:auto;
+                background-color:#FFFFFF;
+            }
+            a{
+                z-index:2;
+                color:#DE0000;
+            }
+            .kontaktLink{
+                color:#FFFFFF;
+
+            }
+            .kontaktLink:hover{
+                color:#2D363D;
+
+            }
+            iframe{
+                margin-left:20%;
+                width:55%;
+                height:315px;
+                padding-top: 20px;
+            }
+            .slikaCentar{
+                margin-left:20%;
+                width:55%;
+                height:auto;
+                padding-top: 20px;
+            }
+            .p-item:hover{
+                background-color:#FFFFFF;
+                color:#343D44;
+            }
+            .podGumb{
+                background-color:#343D44;
+                color:#FFFFFF;
+                width:100%;
+                text-align: left !important;
+                border-color: transparent;
+
+            }
+            .podGumb:hover{
+                background-color:#FFFFFF;
+                color:#343D44;
+            }
+        }
+        @media (max-width : 1200px) {
+            #logo{
+                display: none;
+            }
+            #treciLink{
+                margin-left: 0px;
+
+            }
+            #drugiLink{
+                padding-top: 2px;
+            }
+            #rowIzbornik{
+                padding-left: 0%;
+            }
+            #logoMobile{
+                background-color: #FFFFFF;
+                width:100%;
+                padding-top:0px;
+                margin-bottom: 5px;
+                display: block;
+            }
+            #sadrzajText{
+                width:95%;
+                left:3%;
+            }
+            #naslovBaner {
+                font-weight: bold;
+                font-size:17px;
+            }
+            #meni{
+                padding-top: 0px;
+                padding-left: 0px;
+            }
+            .crtaMeni{
+                padding-left:5px;
+                padding-right:5px;
+            }
+            .crtaMeni:hover{
+                padding-bottom: 1px;
+
+            }
+            .crtaMeni-trenutno{
+                float: left;
+                height:30px;
+                padding-left:5px;
+                padding-right:5px;
+                margin-bottom: 0px;
+                color:#2D363D;
+                border-left: 1px solid #FFFFFF;
+                border-right: transparent;
+                display: inline-block;
+                background-color:#FFFFFF;
+                border-top: transparent;
+                border-bottom: 1px solid #FFFFFF;
+            }
+            #PopupContainer{
+                z-index: 1;
+                position: absolute;
+                width:92%;
+                left:2%;
+            }
+            #uvod{
+                display:none;
+            }
+            #mobile{
+                display:block;
+                color:#FFFFFF;
+
+            }
+            .list-inline{
+                width:100%;
+                margin-top:5px;
+                margin-bottom:5px;
+            }
+            .list-item{
+                margin-top:15px;
+                width:100%;
+                background-color:#343D44;
+                color:#FFFFFF;
+            }
+            .slika-item{
+                display:none;
+            }
+            .KontaktTablica{
+                margin-left:20%;
+
+            }
+            iframe{
+                width:96%;
+                margin-left:1%;
+                height:auto;
+                padding-top: 20px;
+            }
+            .slikaCentar{
+                width:96%;
+                margin-left:1%;
+                height:auto;
+                padding-top: 20px;
+            }
+        }
+        @media (max-width : 550px) {
+            #slikaLogo{
+                width:100%;
+            }
+        }
+        @media (min-width: 100px) and (max-width: 355px) {
+            #rowIzbornik{
+                font-size: 12px;
+            }
+
+        }
+        @media (min-width: 760px) and (max-width: 770px){
+            #meni{
+                margin-right: 10px;
+            }
+            #drugiLink{
+                margin-left: 9px;
+            }
+            #treciLink{
+                padding-top: 2px;
+                margin-left: 67px;
+            }
+            #cetLink{
+                padding-top: 2px;
+                margin-left: 89px;
+            }
+            #rowIzbornik{
+                width:96%;
+            }
+            #sadrzajText{
+                width:96%;
+                padding-left: 0px;
+                padding-right: 5px;
+                left:0%;
+            }
+            .crtaMeni{
+                padding-left:10px;
+                padding-right:18px;
+            }
+
+        }
+        @media (min-width: 1015px) and (max-width: 1035px){
+
+            #treciLink{
+                padding-top: 2px;
+                margin-left: 35px;
+            }
+            #cetLink{
+                padding-top: 2px;
+                margin-left: 38px;
+            }
+
+            #sadrzajText{
+                width:96%;
+                padding-left: 0px;
+                padding-right: 5px;
+                left:0%;
+            }
+
+        }
+        @media (min-width: 1600px){
+
+            #logo{
+                margin-left: 45px;
+            }
+
+        }
+    </style>
+    <script>
+
+        $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if ((this.hash !== "#hidden2")&&(this.hash !== "#hidden")&&(this.hash !== "#hidden3")&&(this.hash !== "#hidden4")&&(this.hash !== "#hidden5")&&(this.hash !== "#hidden6")&&(this.hash !== "#hidden7")) {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 400, function(){
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+            $('#meni button').mouseover(function() {
+                var $this = $(this);
+                var id = $this.attr('rel');
+                var $currentWidget = $('#' + id);
+                $('.Popupactive').removeClass('Popupactive');
+                $currentWidget.show().siblings('.Popup').hide();
+            });
+            $('#PopupContainer').mouseleave(function() {
+                $('.Popup').hide();
+            });
+            $('#meni button').click(function() {
+                var $this = $(this);
+                var id = $this.attr('rel');
+                var $currentWidget = $('#' + id);
+                $('.Popupactive').removeClass('Popupactive');
+                $currentWidget.show().siblings('.Popup').hide();
+            });
+
+            var width = $(window).width();
+            if(width<1290){
+                $('#sadrzajText').click(function() {
+                    $('.Popup').hide();
+                });
+            }
+            else{
+                $('#PopupContainer').mouseleave(function() {
+                    $('.Popup').hide();
+                });
+                $('#izbornik').click(function() {
+                    $('.Popup').hide();
+                });
+            }
+            if(width>1290){
+                $('#drugiLink').click(function() {
+                    window.location.href='Automtizacija.html';
+                });
+            }
+            else{
+                $('#drugiLink').click(function() {
+                });
+
+            }
+        });
+
+
+    </script>
+</head>
+<body>
+<div id="izbornik" class="container-fluid">
+    <div class="container">
+        <div id="rowIzbornik" class="row">
+            <div id="logoMobile" class="col-sm-1"><img id="slikaLogo" src="slike/kompeksTest2.png"></div>
+            <div id="meni" class="col-sm-1">
+                <button class="crtaMeni" onclick="window.location.href='Proizvodi.html'" type="button">
+                    Proizvodi
+                </button>
+            </div>
+            <div id="meni" class="col-sm-1">
+                <button id="drugiLink" class="crtaMeni-trenutno" rel="drugi-link" type="button">
+                    Automatizacija
+                </button>
+            </div>
+            <div id="meni" class="col-sm-1">
+                <button id="treciLink" class="crtaMeni" rel="treci-link" type="button">
+                    Industrija
+                </button>
+            </div>
+            <div id="logo" class="col-sm-1">
+                <img src="slike/kompeksTest2.png">
+            </div>
+            <div id="meni" class="col-sm-1">
+                <button id="cetLink" class="crtaMeni" rel="cet-link" type="button">
+                    Kontakt
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<div id="PopupContainer" class="container">
+    <div id="prvi-link" class="Popup">
+        <div id="uvod">
+            <table>
+                <tr>
+                    <th><img src="slike/Proizvodi.jpg"></th>
+                    <th id="uvodTekst">
+                        Naši proizvodi predstavljaju raznolikost, kvalitetu, pouzdanost i snagu inovacija.
+                        Karakteristike izvedbe koje ćete pronaći u cijelom portfelju projekta
+                        koje vam nudimo kao jedan od vodećih proizvođača pogonske tehnike u svijetu.
+                        Vjerujte nam na riječ, odaberite svoje savršeno rješenje za pogon iz našeg modularnog sustava.
+                        </br>
+                        </br>
+                        <button class="buttonVise" onclick="window.location.href='Proizvodi.html'">Više...</button>
+
+                    </th>
+                </tr>
+
+            </table>
+        </div>
+        <div id="mobile">
+            <table>
+                <tr>
+                    <th><img class="slika-mobile" src="slike/Proizvodi.jpg"></th>
+                </tr>
+                <tr>
+                    <th> Naši proizvodi predstavljaju raznolikost, kvalitetu, pouzdanost i snagu inovacija.
+                        Karakteristike izvedbe koje ćete pronaći u cijelom portfelju projekta
+                        koje vam nudimo kao jedan od vodećih proizvođača pogonske tehnike u svijetu.
+                        Vjerujte nam na riječ, odaberite svoje savršeno rješenje za pogon iz našeg modularnog sustava.</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="drugi-link" class="Popup">
+        <div id="uvod">
+            <h2>MAXOLUTION®</h2></br>
+            <table>
+                <tr>
+                    <th><img src="slike/automation.png"></th>
+                    <th id="uvodTekst">
+                        Naša MAXOLUTION® sustavna rješenja za
+                        automatizaciju tvornica i strojeva nude vam
+                        inovativne tehnologije. Od planiranja do pokretanja,
+                        imate koristi od naše opsežne stručnosti i dobivate sve što vam treba na jednom mjestu,
+                        što znači da možete početi razmišljati o sutrašnjim procesima već danas.
+                        </br>
+
+                </tr>
+
+            </table>
+        </div>
+        <ul class="list-inline">
+            <li class="list-item"><p class="p-item"><button class="podGumb" onclick="window.location.href='MAutomatizacijaProizvodnje.html'">MAXOLUTION® </br> automatizacija proizvodnje</button></p><img class="slika-item" src="slike/a1.jpg"></li>
+            <li class="list-item"><p class="p-item"><button class="podGumb" onclick="window.location.href='MAutomatizacijaAuto.html'">MAXOLUTION®</br> automatizacija auto industrije</button></p><img class="slika-item" src="slike/a2.jpg"></li>
+            <li class="list-item"><p class="p-item"><button class="podGumb" onclick="window.location.href='AutomatizacijaStrojeva.html'">MAXOLUTION® </br>automatizacija strojeva</button></p><img class="slika-item" src="slike/a3.jpg"></li>
+        </ul>
+        <div>
+        </div>
+    </div>
+
+    <div id="treci-link" class="Popup">
+        <div id="uvod">
+            <h2>Industrija</h2></br>
+            <table>
+                <tr>
+                    <th><img src="slike/industrija.jpg"></th>
+                    <th id="uvodTekst">
+                        Svaka industrija ima svoje posebnosti.
+                        Različite aktivnosti zahtijevaju inovativne, učinkovite, snažne i pouzdane pogonske sustave.
+                        Nudimo vam savršene pogone i rješenja za vašu industriju.</th>
+                </tr>
+
+            </table>
+        </div>
+        <ul class="list-inline">
+            <li class="list-item"><p class="p-item">Auto industrija</p></li>
+            <li class="list-item"><p class="p-item">Pića i punjenje tekućina</p></li>
+            <li class="list-item"><p class="p-item">Transport i logistika</p></li>
+            <li class="list-item"><p class="p-item">Prtljaga - aerodrom</p></li>
+            <li class="list-item"><p class="p-item">Tehnologija otpadne vode</p></li>
+        </ul>
+        <div>
+        </div>
+    </div>
+    <div id="cet-link" class="Popup">
+        <table class="KontaktTablica">
+            <tr>
+                <th>Kompeks d.o.o.</th>
+            </tr>
+            <tr>
+                <th> Zeleni dol 10</th>
+            </tr>
+            <tr>
+                <th>10000 Zagreb</br></br></th>
+            </tr>
+            <tr>
+                <th> Kontakt:</th>
+            </tr>
+            <tr>
+                <th>
+                    <p class="kontaktLink" onclick="location.href='mailto:info@kompeks.hr';">info@kompeks.hr</p>
+                </th>
+            </tr>
+            <tr>
+                <th> Tel: 01 4613 158 - (+385 1 4613 158)</th>
+            </tr>
+            <tr>
+                <th> Fax: 01 4619 396 - (+385 1 4619 396)</th>
+            </tr>
+            <tr>
+                <th> Mob: 099 69 88 567</th>
+            </tr>
+        </table>
+    </div>
+</div>
+<div id="sadrzajText" class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>MAXOLUTION® automatizacija proizvodnje</h3>
+                Želite automatizirati svoje procese proizvodnje i montaže što je dosljednije moguće, ali istovremeno zadržati svoje poslovanje otvorenim za budućnost i ostati u mogućnosti brzo reagirati na zahtjeve tržišta?
+                Ako da, vjerojatno se pitate kako upravljati i uspostaviti ravnotežu između ih zahtjeva?
+                </br>
+                Na temelju načela industrije 4.0 doveli smo svoja rješenja za automatizaciju na takvu razinu da vizije postaju rješenja - kompetentne, testirane, sigurne – i već danas dostupne.
+                Vašu buduću tvornicu konstruiramo u izmjenjivim modulima, tako da možete brzo reagirati na promjene u zahtjevima tržišta.
+                </br>Umjesto nefleksibilnih sustava kao što su stacionarni transportni sustavi, sada postavljamo osnovu za vašu pametnu tvornicu s novom, fleksibilnom i prilagodljivom modularnom strukturom. Jednostavno dodajte, duplicirajte ili uklonite pojedinačne procesne module prema vašoj prodaji.
+                Pripremamo vas i vašu proizvodnju za industriju 4.0.
+
+               </br>
+                <img class="slikaCentar" src="slike/MAproizvodnje1.png">
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
